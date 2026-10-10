@@ -22,7 +22,7 @@ Web shop where part of the catalogue can be ordered and the rest is listed for i
 
 Shop Poppers sells across Serbia with cash on delivery. Part of its catalogue can be ordered online, while the other products are listed for information only: each has a price, a photo and its own page, but no way to buy it. The client wanted all of it to look like one collection and still behave differently.
 
-The rule lives on the server. When a product is added to the cart, and again at checkout, the server reads the product record and accepts only items marked as orderable, so editing the HTML or sending a hand-made request opens no back door. Price, availability and delivery are read from the database again before an order is accepted, and the owner switches a product between the two states with one checkbox in the admin panel.
+The rule lives on the server. When a product is added to the cart, and again at checkout, the server reads the product record and accepts only items marked as orderable, so editing the HTML or sending a hand-made request opens no back door. Price, availability and delivery are read from the database again before an order is accepted, and in the admin panel the owner marks whether each product in the sales part of the catalogue is available and for sale, while information-only products can never be switched to sale.
 
 ## What I built
 
@@ -30,8 +30,17 @@ The rule lives on the server. When a product is added to the cart, and again at 
 - Server checks on add-to-cart and at checkout, with price, availability and delivery recalculated from the database
 - A delivery rule (one item paid, two or more free) shown on the site and calculated by the server
 - Cash on delivery only, so no card data is collected on the site
-- An admin panel for products and orders, where one checkbox moves a product between the two states
+- An admin panel for products and orders, with availability and sale switches per product, a site-wide switch that closes ordering, and sign-in with a one-time code
 - Product pages with their own canonical URLs, Open Graph images and structured data; cart, confirmations and admin kept out of the index
+
+## Results
+
+| | Performance | Accessibility | Best practices | SEO |
+| :-- | :-: | :-: | :-: | :-: |
+| Mobile | 100 | 100 | 100 | 100 |
+| Desktop | 100 | 100 | 100 | 100 |
+
+PageSpeed Insights, lab test of the live site, October 2026.
 
 ## Screenshots
 

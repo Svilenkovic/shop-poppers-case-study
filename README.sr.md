@@ -22,7 +22,7 @@ Web prodavnica u kojoj se deo kataloga poručuje, a ostatak je samo informativan
 
 Shop Poppers prodaje u celoj Srbiji, uz plaćanje pouzećem. Deo kataloga se poručuje preko sajta, a ostali proizvodi su samo informativni: svaki ima cenu, fotografiju i svoju stranu, ali ne može da se kupi. Klijent je hteo da sve izgleda kao jedna kolekcija, a da se ipak ponaša različito.
 
-Pravilo stoji na serveru. Kad se proizvod doda u korpu, i ponovo pri završetku porudžbine, server čita zapis proizvoda i prihvata samo artikle označene za poručivanje, pa izmena HTML-a ili ručno sastavljen zahtev ne otvaraju zadnja vrata. Cena, dostupnost i dostava ponovo se čitaju iz baze pre nego što se porudžbina prihvati, a vlasnik prebacuje proizvod iz jednog stanja u drugo jednim poljem u admin panelu.
+Pravilo stoji na serveru. Kad se proizvod doda u korpu, i ponovo pri završetku porudžbine, server čita zapis proizvoda i prihvata samo artikle označene za poručivanje, pa izmena HTML-a ili ručno sastavljen zahtev ne otvaraju zadnja vrata. Cena, dostupnost i dostava ponovo se čitaju iz baze pre nego što se porudžbina prihvati, a vlasnik u admin panelu označava da li je proizvod iz prodajnog dela dostupan i na prodaji, dok informativni proizvodi nikad ne mogu da se prebace u prodaju.
 
 ## Šta sam uradio
 
@@ -30,8 +30,17 @@ Pravilo stoji na serveru. Kad se proizvod doda u korpu, i ponovo pri završetku 
 - Provere na serveru pri dodavanju u korpu i pri završetku porudžbine, uz ponovni obračun cene, dostupnosti i dostave iz baze
 - Pravilo dostave (jedan artikal se plaća, dva ili više besplatno) prikazano na sajtu, a obračunato na serveru
 - Samo plaćanje pouzećem, pa sajt ne prikuplja podatke o karticama
-- Admin panel za proizvode i porudžbine, u kome jedno polje prebacuje proizvod iz jednog stanja u drugo
+- Admin panel za proizvode i porudžbine, sa oznakama dostupnosti i prodaje po proizvodu, prekidačem koji zatvara poručivanje za ceo sajt i prijavom uz jednokratni kod
 - Strane proizvoda sa sopstvenim kanonskim adresama, Open Graph slikama i strukturisanim podacima; korpa, potvrde i admin deo van indeksa
+
+## Merenja
+
+| | Performanse | Pristupačnost | Dobre prakse | SEO |
+| :-- | :-: | :-: | :-: | :-: |
+| Telefon | 100 | 100 | 100 | 100 |
+| Desktop | 100 | 100 | 100 | 100 |
+
+PageSpeed Insights, laboratorijsko merenje živog sajta, oktobar 2026.
 
 ## Snimci ekrana
 
