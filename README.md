@@ -40,7 +40,7 @@ The rule lives on the server. When a product is added to the cart, and again at 
 | Mobile | 100 | 100 | 100 | 100 |
 | Desktop | 100 | 100 | 100 | 100 |
 
-PageSpeed Insights, lab test of the live site, October 2026. Security headers: 6 of 6. Structured data: `ItemList`, `OnlineStore`.
+PageSpeed Insights, lab test of the live site, October 2026. Security headers: 6 of 6. axe accessibility check: no violations. Structured data: `ItemList`, `OnlineStore`.
 
 ## Screenshots
 

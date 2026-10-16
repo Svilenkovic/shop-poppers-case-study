@@ -40,7 +40,7 @@ Pravilo stoji na serveru. Kad se proizvod doda u korpu, i ponovo pri završetku 
 | Telefon | 100 | 100 | 100 | 100 |
 | Desktop | 100 | 100 | 100 | 100 |
 
-PageSpeed Insights, laboratorijsko merenje živog sajta, oktobar 2026. Sigurnosna zaglavlja: 6 od 6. Strukturisani podaci: `ItemList`, `OnlineStore`.
+PageSpeed Insights, laboratorijsko merenje živog sajta, oktobar 2026. Sigurnosna zaglavlja: 6 od 6. axe provera pristupačnosti: bez prekršaja. Strukturisani podaci: `ItemList`, `OnlineStore`.
 
 ## Snimci ekrana
 
